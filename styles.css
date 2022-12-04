@@ -30,7 +30,7 @@ p {
 /* Navigation Bar */
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 .navbar-brand {
@@ -66,12 +66,20 @@ p {
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+}
+
+.title-img-container {
+  position: relative;
 }
 
 /* Features Section */
 
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .features-icon {
@@ -126,4 +134,16 @@ p {
 
 .pricing-col {
   padding: 3% 2%;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
